@@ -16,7 +16,7 @@ const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const menus = [
     { name: 'Dashboard', path: '/dashboard', icon: <LayoutDashboard size={20} /> },
-    { name: 'Purchase Req', path: '/pr', icon: <FileText size={20} /> },
+    { name: 'Purchase Req', path: '/purchase-requisitions', icon: <FileText size={20} /> },
     { name: 'Tenders', path: '/tenders', icon: <Gavel size={20} /> },
     { name: 'Purchase Order', path: '/po', icon: <ShoppingCart size={20} /> },
     { name: 'Goods Receipt', path: '/receipt', icon: <PackageCheck size={20} /> },
@@ -28,7 +28,7 @@ const Sidebar = () => {
 
   return (
     <aside 
-      className={`h-screen sticky top-0 bg-white border-r-4 border-black flex flex-col justify-between transition-all duration-300 ${isCollapsed ? 'w-24 p-4' : 'w-72 p-6'}`}
+      className={`h-screen sticky top-0 bg-white border-r-4 border-black flex flex-col justify-between transition-all duration-300 ${isCollapsed ? 'w-24 p-4' : 'w-74 p-6'}`}
     >
       <div>
         {/* Header / Logo & Toggle Button */}

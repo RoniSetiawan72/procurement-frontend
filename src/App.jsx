@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import MainLayout from './layouts/MainLayout';
+import PurchaseReq from './pages/PurchaseReq';
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
             <Dashboard />
           </MainLayout>} />
         <Route path="/" element={<Navigate to="/login" />} />
+
+        <Route path="purchase-requisitions" element={
+          <MainLayout>
+            <PurchaseReq />
+          </MainLayout>} />
       </Routes>
     </Router>
   );
