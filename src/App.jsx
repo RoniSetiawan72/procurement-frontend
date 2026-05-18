@@ -3,6 +3,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import MainLayout from './layouts/MainLayout';
 import PurchaseReq from './pages/PurchaseReq';
+import Tender from './pages/Tender';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
         <Route path="purchase-requisitions" element={
           <MainLayout>
             <PurchaseReq />
+          </MainLayout>} />
+
+        <Route path="tenders" element={
+          <MainLayout>
+            <Tender />
           </MainLayout>} />
       </Routes>
     </Router>
